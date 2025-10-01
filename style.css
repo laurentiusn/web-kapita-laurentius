@@ -1,0 +1,258 @@
+/* General Body & Typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    padding-top: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center; /* For smaller screens */
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4CAF50;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    text-align: left;
+}
+
+.profile-details h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.profile-details .npm {
+    font-size: 1.1em;
+    color: #666;
+    margin: 5px 0 5px 0;
+    text-align: left;
+}
+
+.profile-details .tagline {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #555;
+    margin: 0;
+    text-align: left;
+}
+
+/* SWOT Analysis Section */
+.swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.swot-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease-in-out;
+}
+
+.swot-card:hover {
+    transform: translateY(-5px);
+}
+
+.swot-card h3 {
+    margin-top: 0;
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+
+.swot-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.swot-card ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.swot-card ul li:last-child {
+    border-bottom: none;
+}
+
+.strength h3 { border-color: #4CAF50; color: #4CAF50; }
+.weakness h3 { border-color: #f44336; color: #f44336; }
+.opportunity h3 { border-color: #2196F3; color: #2196F3; }
+.threat h3 { border-color: #ff9800; color: #ff9800; }
+
+/* Porter's Five Forces Analysis Section */
+.porter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    position: relative;
+    padding: 40px 0; /* Add padding for the central icon */
+}
+
+.porter-force {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    min-height: 180px; /* Ensure cards have similar height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.porter-force i {
+    font-size: 2.5em;
+    color: #607d8b;
+    margin-bottom: 15px;
+}
+
+.porter-force h3 {
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.porter-force p {
+    font-size: 0.85em;
+    color: #666;
+    margin: 0;
+}
+
+.porter-center-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border: 3px solid #ccc;
+}
+
+.porter-center-icon i {
+    font-size: 2.2em;
+    color: #777;
+    margin: 0;
+}
+
+/* Vision Section */
+.vision-section p {
+    text-align: justify;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-details h1,
+    .profile-details .npm,
+    .profile-details .tagline {
+        text-align: center;
+    }
+
+    .swot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .porter-grid {
+        grid-template-columns: 1fr;
+        padding: 60px 0; /* More space for icon on small screens */
+    }
+
+    .porter-center-icon {
+        top: 0; /* Adjust position for smaller screens */
+        transform: translate(-50%, 0);
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}
